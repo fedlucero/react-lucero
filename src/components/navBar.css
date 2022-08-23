@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Dirt&display=swap');
+/* font-family: 'Rubik', sans-serif;
+font-family: 'Rubik Dirt', cursive; */
+
+:root{
+    --fondo:#040F0F;
+    --gris:#4a525a;
+    --principal:#76a7f4;
+    --claro:#F5F8FC;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;
+
+}
+
+body{
+    background-color:var(--gris);
+}
+
+
+nav{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: var(--gris);
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+    
+}
+
+.tercio{
+    width: 25%;
+    background-color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.tercio p {
+    color: var(--principal);
+    font-family:'Rubik Dirt', cursive; 
+    font-size: 2rem;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    background-color: var(--principal);
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.items{
+    width: 75%;
+    display: flex;
+    margin-right: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.items a {
+    margin-left: 40px;
+    color: var(--principal);
+    font-family: 'Rubik Dirt', cursive;
+}
