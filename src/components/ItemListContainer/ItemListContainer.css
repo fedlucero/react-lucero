@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.titulo{
+    font-size: 5rem;
+    font-family: 'Rubik Dirt', cursive;
+}

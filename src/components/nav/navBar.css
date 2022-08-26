@@ -25,6 +25,9 @@ body{
     background-color:var(--gris);
 }
 
+.cart{
+    width:25px;
+}
 
 
 
@@ -88,6 +91,9 @@ body{
         color: var(--principal);
         font-family: 'Rubik Dirt', cursive;
     }}
+    .cart{
+        padding: 30px;
+    }
     
 
 
@@ -139,10 +145,15 @@ body{
 }
 
 .items a {
-    margin-left: 40px;
+    margin-left: 10px;
     color: var(--principal);
     font-family: 'Rubik Dirt', cursive;
 }}
+.cart{
+    padding: 10px;
+}
+
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) {
@@ -197,4 +208,3 @@ body{
     font-family: 'Rubik Dirt', cursive;
 }
 }
-
