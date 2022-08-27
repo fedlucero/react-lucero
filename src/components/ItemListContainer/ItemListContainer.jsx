@@ -1,7 +1,8 @@
 import "./ItemListContainer.css";
-function ItemListContainer () {
+
+function ItemListContainer (props) {
     return(
-        <main><div className="titulo">.COMTIENDA</div></main>
+        <main><div className="titulo">{props.titulo}</div></main>
     )
 
 }
