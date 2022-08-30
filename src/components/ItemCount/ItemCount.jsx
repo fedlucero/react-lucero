@@ -13,7 +13,7 @@ function ItemCount (props){
     return(
       <div className="botones">
        <div className="itemCount">
-        <button className="btn margen" onClick={() => Add(+1)}  disabled={total === props.stock ? true : null}>+</button>
+        <button className="btn margen" onClick={() => Add(1)}  disabled={total === props.stock ? true : null}>+</button>
         <span className="total margen">{total}</span>
         <button className="btn margen" onClick={() => Add(-1)} disabled={total === props.inicial ? true : null}>-</button>
        </div>
