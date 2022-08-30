@@ -5,6 +5,7 @@ font-family: 'Rubik Dirt', cursive; */
 :root{
     --fondo:#040F0F;
     --gris:#4a525a;
+    --gris2:#575b5d;
     --principal:#76a7f4;
     --claro:#F5F8FC;
 
@@ -27,6 +28,10 @@ body{
 
 .cart{
     width:25px;
+}
+
+.cartCount p {
+    padding: 2px 5px;
 }
 
 
@@ -94,12 +99,21 @@ body{
     .cart{
         padding: 30px;
     }
+    div .cartCount{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--principal);
+        background-color: var(--fondo);
+    }
+    
     
 
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:500px) {
+@media only screen and (min-width:501px) {
     nav{
     display: flex;
     width: 100vw;
@@ -151,6 +165,14 @@ body{
 }}
 .cart{
     padding: 10px;
+}
+.cartCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--principal);
+    background-color: var(--fondo);
 }
 
 
@@ -206,5 +228,13 @@ body{
     margin-left: 40px;
     color: var(--principal);
     font-family: 'Rubik Dirt', cursive;
+}
+.cartCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--principal);
+    background-color: var(--fondo);
 }
 }

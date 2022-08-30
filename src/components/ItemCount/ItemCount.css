@@ -1,0 +1,59 @@
+.itemCount{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.margen{
+    margin:10px; 
+}
+
+
+.btn{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    border: none;
+    background-color:var(--principal);
+    text-align:center;
+    transition: all 0.2s;
+    }
+    .btn:hover{
+    background-color:#4095c6;
+    }
+    .btn:disabled{
+        background-color: var(--gris2);
+
+    }
+    @media all and (max-width:30em){
+    .btn{
+    display:block;
+    margin:0.2em auto;
+    }
+    }
+
+
+    .total{
+        color: var(--principal);
+        font-family: 'Rubik Dirt', cursive
+    }
+
+  .botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .añadir{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+  
+
