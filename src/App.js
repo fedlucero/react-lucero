@@ -7,8 +7,7 @@ function App() {
   return (
     <>
     <NavBar />
-    <ItemCount inicial={1} stock={5}/>
-    <ItemListContainer titulo=".COMTIENDA"/>
+    <ItemListContainer/>
   </>
   );
 }

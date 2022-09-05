@@ -10,10 +10,23 @@ function ItemCount (props){
     alert(`Se agregaron ${total} al carrito`)
   }
 
+    // return(
+    //   <div className="botones">
+    //    <div className="itemCount">
+    //     <button className="btn margen" onClick={() => Add(1)}  disabled={total === props.stock ? true : null}>+</button>
+    //     <span className="total margen">{total}</span>
+    //     <button className="btn margen" onClick={() => Add(-1)} disabled={total === props.inicial ? true : null}>-</button>
+    //    </div>
+    //    <button className="btn añadir" onClick={() => seAgrego(total)}>Añadir al Carrito</button>
+    //    </div>
+        
+       
+    // )
+
     return(
       <div className="botones">
        <div className="itemCount">
-        <button className="btn margen" onClick={() => Add(1)}  disabled={total === props.stock ? true : null}>+</button>
+        <button style={props.style} className="btn margen" onClick={() => Add(1)}  disabled={total === props.stock ? true : null}>+</button>
         <span className="total margen">{total}</span>
         <button className="btn margen" onClick={() => Add(-1)} disabled={total === props.inicial ? true : null}>-</button>
        </div>
@@ -25,7 +38,8 @@ function ItemCount (props){
 }
 
 
-// function ItemCount (inicial,stock){
+// si no se pasa por props, al ser un objeto las propiedades van entre {}
+// function ItemCount ({inicial,stock}){
 //     const [total,setTotal] = useState(inicial)
 //     const Add = (a) => {
 //       setTotal(total + a)
