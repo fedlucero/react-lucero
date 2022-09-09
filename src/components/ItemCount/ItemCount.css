@@ -20,12 +20,11 @@
     font-weight:300;
     color:#FFFFFF;
     border: none;
-    background-color:var(--principal);
     text-align:center;
     transition: all 0.2s;
     }
     .btn:hover{
-    background-color:#4095c6;
+    background-color:var(--principal);
     }
     .btn:disabled{
         background-color: var(--gris2);
@@ -57,3 +56,144 @@
 
   
 
+.color-1{
+    background-color:#76A7F4;
+}
+.color-2{
+    background-color:#6B8CE6;
+}
+.color-3{
+    background-color:#6071D7;
+}
+.color-4{
+    background-color:#8671E1;
+}
+.color-5{
+    background-color:#AB71EB;
+}
+.color-6{
+    background-color:#B188EF;
+}
+.color-7{
+    background-color:#B69FF2;
+}
+.color-8{
+    background-color:#BCB6F6;
+}
+.color-9{
+    background-color:#C1CDF9;
+}
+.color-10{
+    background-color:#20331A;
+}
+.color-11{
+    background-color:#33512A;
+}
+.color-12{
+    background-color:#446C37;
+}
+.color-13{
+    background-color:#558745;
+}
+.color-14{
+    background-color:#66A253;
+}
+.color-15{
+    background-color:#7CB36B;
+}
+.color-16{
+    background-color:#94C186;
+}.color-17{
+    background-color:#ABCEA1;
+}.color-18{
+    background-color:#C3DCBC;
+}.color-19{
+    background-color:#8C2F39;
+}.color-20{
+    background-color:#9F3541;
+}.color-21{
+    background-color:#B23A48;
+}.color-22{
+    background-color:#BE4E59;
+}.color-23{
+    background-color:#CA626A;
+}.color-24{
+    background-color:#D6767B;
+}.color-25{
+    background-color:#E18A8B;
+}.color-26{
+    background-color:#EFA8A1;
+}.color-27{
+    background-color:#F6B7AC;
+}
+
+.textColor-1{
+   color:#76A7F4;
+}
+.textColor-2{
+   color:#6B8CE6;
+}
+.textColor-3{
+   color:#6071D7;
+}
+.textColor-4{
+   color:#8671E1;
+}
+.textColor-5{
+   color:#AB71EB;
+}
+.textColor-6{
+   color:#B188EF;
+}
+.textColor-7{
+   color:#B69FF2;
+}
+.textColor-8{
+   color:#BCB6F6;
+}
+.textColor-9{
+   color:#C1CDF9;
+}
+.textColor-10{
+   color:#20331A;
+}
+.textColor-11{
+   color:#33512A;
+}
+.textColor-12{
+   color:#446C37;
+}
+.textColor-13{
+   color:#558745;
+}
+.textColor-14{
+   color:#66A253;
+}
+.textColor-15{
+   color:#7CB36B;
+}
+.textColor-16{
+   color:#94C186;
+}.textColor-17{
+   color:#ABCEA1;
+}.textColor-18{
+   color:#C3DCBC;
+}.textColor-19{
+   color:#8C2F39;
+}.textColor-20{
+   color:#9F3541;
+}.textColor-21{
+   color:#B23A48;
+}.textColor-22{
+   color:#BE4E59;
+}.textColor-23{
+   color:#CA626A;
+}.textColor-24{
+   color:#D6767B;
+}.textColor-25{
+   color:#E18A8B;
+}.textColor-26{
+   color:#EFA8A1;
+}.textColor-27{
+   color:#F6B7AC;
+}

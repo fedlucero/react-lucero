@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    
+    align-items: center;
+}  
+.cardArcDetail{
+    width: 90vw;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+}
+.textContainerDetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+
+}
+/* .countContainerDetail{
+    width: 20%;
+
+}
+
+.imgArcDetail{
+    width: 50%;
+
+}
+.textArcDetail{
+    width: 50%;
+
+} */

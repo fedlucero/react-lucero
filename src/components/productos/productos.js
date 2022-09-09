@@ -117,8 +117,8 @@ export const productos =[
         price: 10,
         stock: 11,
         img: i9,
-       description: '#BCB6F6',
-        estilo:'"color:#BCB6F6"'
+       description: '#C1CDF9',
+        estilo:'"color:#C1CDF9"'
     },
     {
         id: 10,

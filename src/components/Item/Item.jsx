@@ -20,12 +20,13 @@ const Item = ({ item }) => {
                         <h2>$ {item.price}</h2>
                         <h2>{item.id}</h2>
                     </div>
-                    <Link to={`/item/${item.id}`}> <div className='btn btnDetalles'>
-                        Detalles
-                    </div></Link>
+                   
                 </div>
                 <div>
-                <ItemCount inicial={1} stock={item.stock} />
+                <ItemCount inicial={1} stock={item.stock} bgBtn={`color-${item.id}`} textColor={`textColor-${item.id}`} />
+                <Link to={`/item/${item.id}`}> <div className={`btn btnDetalles color-${item.id}`}>
+                        Detalles
+                    </div></Link>
                 </div>
                 
             </div>
