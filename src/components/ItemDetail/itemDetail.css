@@ -18,16 +18,14 @@ body{
     width: 70%;
 
 }
-/* .countContainerDetail{
-    width: 20%;
-
+.textArcDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.imgArcDetail{
-    width: 50%;
-
+.textArcDetail h2{
+    font-family: 'Rubik', sans-serif;
+   
+    margin: 5px;
 }
-.textArcDetail{
-    width: 50%;
-
-} */

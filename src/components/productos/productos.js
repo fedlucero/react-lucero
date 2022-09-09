@@ -297,7 +297,7 @@ export const productos =[
         price: 10,
         stock: 4,
         img: i27,
-       description: 'F6B7AC',
+       description: '#F6B7AC',
         estilo:'"color:F6B7AC"'
     }
 ]
