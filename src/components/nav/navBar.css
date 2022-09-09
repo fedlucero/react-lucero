@@ -91,7 +91,8 @@ body{
         align-items: center;
     }
     
-    .items a {
+    .items L.lnk p{
+
         padding: 30px;
         color: var(--principal);
         font-family: 'Rubik Dirt', cursive;
@@ -158,7 +159,7 @@ body{
     align-items: center;
 }
 
-.items a {
+.items .link p{
     margin-left: 10px;
     color: var(--principal);
     font-family: 'Rubik Dirt', cursive;
@@ -224,7 +225,7 @@ body{
     align-items: center;
 }
 
-.items a {
+.items .link p{
     margin-left: 40px;
     color: var(--principal);
     font-family: 'Rubik Dirt', cursive;
