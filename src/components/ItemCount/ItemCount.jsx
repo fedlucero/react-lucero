@@ -26,11 +26,11 @@ function ItemCount (props){
     return(
       <div className="botones">
        <div className="itemCount">
-        <button style={props.style} className={`btn margen ${props.bgBtn}`} onClick={() => Add(1)}  disabled={total === props.stock ? true : null}>+</button>
-        <span className={`total margen ${props.textColor}`}>{total}</span>
-        <button className={`btn margen ${props.bgBtn}`} onClick={() => Add(-1)} disabled={total === props.inicial ? true : null}>-</button>
+        <button style={props.style} className={`btn margen`} onClick={() => Add(1)}  disabled={total === props.stock ? true : null}>+</button>
+        <span style={props.styleText} className={`total margen`}>{total}</span>
+        <button style={props.style} className={`btn margen`} onClick={() => Add(-1)} disabled={total === props.inicial ? true : null}>-</button>
        </div>
-       <button className={`btn añadir ${props.bgBtn}`} onClick={() => seAgrego(total)}>Añadir al Carrito</button>
+       <button style={props.style} className={`btn añadir`} onClick={() => seAgrego(total)}>Añadir al Carrito</button>
        </div>
         
        

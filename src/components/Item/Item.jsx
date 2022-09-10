@@ -16,18 +16,19 @@ const Item = ({ item }) => {
                         <img src={item.img} alt="" width="200" />
                     </div>
                     <div className='textArc'>
-                        <h2 className={`textColor-${item.id}`}>{item.name}</h2>
-                        <h2 className={`textColor-${item.id}`}>$ {item.price}</h2>
+                        <h2 style={{color: item.description}} className={`textColor-${item.id}`}>{item.name}</h2>
+                        <h2 style={{color: item.description}} className={`textColor-${item.id}`}>$ {item.price}</h2>
                     </div>
                    
                 </div>
                 <div>
-                <ItemCount inicial={1} stock={item.stock} bgBtn={`color-${item.id}`} textColor={`textColor-${item.id}`} />
-                <Link to={`/item/${item.id}`}> <div className={`btn btnDetalles color-${item.id}`}>
+                <ItemCount inicial={1} stock={item.stock} style={{'background-color': item.description}}  styleText={{color: item.description}}/>
+                <Link to={`/item/${item.id}`}> <div className={`btn btnDetalles color-${item.id}`} style={{'background-color': item.description}} >
                         Detalles
                     </div></Link>
                 </div>
                 
+               
             </div>
            
       
