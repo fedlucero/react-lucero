@@ -22,7 +22,7 @@ const Item = ({ item }) => {
                    
                 </div>
                 <div>
-                <ItemCount inicial={1} stock={item.stock} style={{'background-color': item.description}}  styleText={{color: item.description}}/>
+                <ItemCount inicial={0} stock={item.stock} style={{'background-color': item.description}}  styleText={{color: item.description}}/>
                 <Link to={`/item/${item.id}`}> <div className={`btn btnDetalles color-${item.id}`} style={{'background-color': item.description}} >
                         Detalles
                     </div></Link>
