@@ -8,9 +8,7 @@ function ItemCount (props){
   const Add = (a) => {
     setTotal(total + a)
   }
-  const seAgrego = (total) => {
-    alert(`Se agregaron ${total} al carrito`)
-  }
+
 
  
   
@@ -25,12 +23,11 @@ function ItemCount (props){
         <button style={props.style} className={`btn margen`} onClick={() => Add(-1)} disabled={total === props.inicial ? true : null}>-</button>
        </div>
 
-       {/* <button style={props.style} className={`btn añadir`} onClick={() => seAgrego(total)}>Añadir al Carrito</button>*/}
 
       {
       total === 0
       ?<button  className={`btn añadir`} disabled>Añadir al carrito </button>
-      :<button style={props.style} className={`btn añadir`} onClick={() => seAgrego(total)}>Añadir al Carrito</button>
+      :<button style={props.style} className={`btn añadir`} onClick={() => props.seAgrego(total)}>Añadir al Carrito</button>
       
       }
        </div>

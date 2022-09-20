@@ -19,15 +19,16 @@ const Item = ({ item }) => {
                         <h2 style={{color: item.description}} className={`textColor-${item.id}`}>{item.name}</h2>
                         <h2 style={{color: item.description}} className={`textColor-${item.id}`}>$ {item.price}</h2>
                     </div>
-                   
-                </div>
-                <div>
-                <ItemCount inicial={0} stock={item.stock} style={{'background-color': item.description}}  styleText={{color: item.description}}/>
-                <Link to={`/item/${item.id}`}> <div className={`btn btnDetalles color-${item.id}`} style={{'background-color': item.description}} >
+                    <Link to={`/item/${item.id}`}> <div className={`btn btnDetalles color-${item.id}`} style={{'background-color': item.description}} >
                         Detalles
                     </div></Link>
                 </div>
-                
+                 {/* <div>
+                 <ItemCount inicial={0} stock={item.stock} style={{'background-color': item.description}}  styleText={{color: item.description}}/> 
+                <Link to={`/item/${item.id}`}> <div className={`btn btnDetalles color-${item.id}`} style={{'background-color': item.description}} >
+                        Detalles
+                    </div></Link>
+                </div>  */}
                
             </div>
            

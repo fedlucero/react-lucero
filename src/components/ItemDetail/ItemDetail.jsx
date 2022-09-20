@@ -2,12 +2,20 @@ import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './itemDetail.css'
 import{ Link } from 'react-router-dom'
-import total from '../ItemCount/ItemCount'
-
+// import total from '../ItemCount/ItemCount'
+import { useState } from 'react'
 
 
 const ItemDetail = ({ item }) => {
-    
+    const[total,setTotal] = useState(0)
+    console.log(total);
+
+    const Agregar = (total)=> {
+        setTotal(total)
+        alert(`Se agregaron ${total} al carrito`)
+        console.log(total);
+    }
+ 
 
     return (
         
@@ -21,12 +29,13 @@ const ItemDetail = ({ item }) => {
                     <h2 style={{color: item.description}}>$ {item.price}</h2>
                     <h2 style={{color: item.description}}> Cirulo de color {item.description}</h2>
                 </div>
-            <ItemCount inicial={0} stock={item.stock}  style={{'background-color': item.description}}  styleText={{color: item.description}}/>
+            {/* <ItemCount inicial={0} stock={item.stock}  seAgrego={Agregar} style={{backgroundColor: item.description}}  styleText={{color: item.description}}/> */}
             
              {   total === 0
-                ? <ItemCount inicial={0} stock={item.stock}  style={{'background-color': item.description}}  styleText={{color: item.description}}/>
-                : <Link to={`/cart`}><div className={`btn btnDetalles`} >Al carrito</div></Link>
-            
+                ? <ItemCount inicial={0} stock={item.stock} seAgrego={Agregar}  style={{backgroundColor: item.description}}  styleText={{color: item.description}}/>
+                :
+                <Link to={`/cart`}><div className={`btn btnDetalles`} >Al carrito</div></Link>
+
              } 
             
         </div>
