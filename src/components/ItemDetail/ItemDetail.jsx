@@ -2,18 +2,20 @@ import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './itemDetail.css'
 import{ Link } from 'react-router-dom'
-// import total from '../ItemCount/ItemCount'
-import { useState } from 'react'
+import { useState, useContext } from 'react';
+import { CartContext } from '../Context/CartContext';
 
 
 const ItemDetail = ({ item }) => {
     const[total,setTotal] = useState(0)
+    const ctx = useContext(CartContext);
     console.log(total);
 
     const Agregar = (total)=> {
         setTotal(total)
         alert(`Se agregaron ${total} al carrito`)
         console.log(total);
+        ctx.addItem(item,total)
     }
  
 

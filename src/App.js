@@ -5,9 +5,11 @@ import NavBar from "./components/nav/navBar";
 import Cart from "./components/Cart/Cart";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CartProvider from "./components/Context/CartContext";
 
 function App() {
   return (
+    <CartProvider>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -18,6 +20,7 @@ function App() {
         <Route path='*' element={<p>404</p>}/> 
       </Routes>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 

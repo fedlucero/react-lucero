@@ -1,0 +1,51 @@
+.cartVacio{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 20px;
+    font-size: 3rem;
+    
+}
+
+
+.volver{
+    font-size: 1rem;
+    justify-self: flex-end;
+}
+
+/* font-family: 'Rubik', sans-serif;
+font-family: 'Rubik Dirt', cursive; */
+ .cartConArc{
+    display: flex;
+ }
+ .cartItem{
+    width: 80vw;
+   
+ 
+ }
+
+ .cartContext{
+    position: fixed;
+    top: 100;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+ }
+
+ .cartTotal{
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--principal);
+ }
+
+
+ a{
+    text-decoration: none;
+ }
