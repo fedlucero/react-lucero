@@ -1,30 +1,5 @@
-import i1 from '../img/arc-img/01.png';
-import i2 from '../img/arc-img/02.png';
-import i3 from '../img/arc-img/03.png';
-import i4 from '../img/arc-img/04.png';
-import i5 from '../img/arc-img/05.png';
-import i6 from '../img/arc-img/06.png';
-import i7 from '../img/arc-img/07.png';
-import i8 from '../img/arc-img/08.png';
-import i9 from '../img/arc-img/09.png';
-import i10 from '../img/arc-img/10.png';
-import i11 from '../img/arc-img/11.png';
-import i12 from '../img/arc-img/12.png';
-import i13 from '../img/arc-img/13.png';
-import i14 from '../img/arc-img/14.png';
-import i15 from '../img/arc-img/15.png';
-import i16 from '../img/arc-img/16.png';
-import i17 from '../img/arc-img/17.png';
-import i18 from '../img/arc-img/18.png';
-import i19 from '../img/arc-img/19.png';
-import i20 from '../img/arc-img/20.png';
-import i21 from '../img/arc-img/21.png';
-import i22 from '../img/arc-img/22.png';
-import i23 from '../img/arc-img/23.png';
-import i24 from '../img/arc-img/24.png';
-import i25 from '../img/arc-img/25.png';
-import i26 from '../img/arc-img/26.png';
-import i27 from '../img/arc-img/27.png';
+
+
 
 
 export const productos =[
@@ -35,7 +10,7 @@ export const productos =[
         name: 'Arc #1',
         price: 10,
         stock: 4,
-        img: i1,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/01_nim35l.png',
        description: '#76A7F4',
         estilo:'style={{backgound-color: "#76A7F4";}}'
     }
@@ -46,7 +21,7 @@ export const productos =[
         name: 'Arc #2',
         price: 10,
         stock: 5,
-        img: i2,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855118/arc/02_lgwuup.png',
        description: '#6B8CE6',
         estilo:'"color:#6B8CE6"'
     },
@@ -56,7 +31,7 @@ export const productos =[
         name: 'Arc #3',
         price: 10,
         stock: 6,
-        img: i3,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855118/arc/03_ince6k.png',
        description: '#6071D7',
         estilo:'"color:#6071D7"'
     },
@@ -66,7 +41,7 @@ export const productos =[
         name: 'Arc #4',
         price: 10,
         stock: 3,
-        img: i4,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855118/arc/04_jmocxm.png',
        description: '#8671E1',
         estilo:'"color:#8671E1"'
     },
@@ -76,7 +51,7 @@ export const productos =[
         name: 'Arc #5',
         price: 10,
         stock: 8,
-        img: i5,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855118/arc/05_bc2222.png',
        description: '#AB71EB',
         estilo:'"color:#AB71EB"'
     },
@@ -86,7 +61,7 @@ export const productos =[
         name: 'Arc #6',
         price: 10,
         stock: 2,
-        img: i6,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855118/arc/06_kl5lyd.png',
        description: '#B188EF',
         estilo:'"color:#B188EF"'
     },
@@ -96,7 +71,7 @@ export const productos =[
         name: 'Arc #7',
         price: 10,
         stock: 9,
-        img: i7,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/07_agnmg3.png',
        description: '#B69FF2',
         estilo:'"color:#B69FF2"'
     },
@@ -106,7 +81,7 @@ export const productos =[
         name: 'Arc #8',
         price: 10,
         stock: 11,
-        img: i8,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/08_kcrgrj.png',
        description: '#BCB6F6',
         estilo:'"color:#BCB6F6"'
     },
@@ -116,7 +91,7 @@ export const productos =[
         name: 'Arc #9',
         price: 10,
         stock: 11,
-        img: i9,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/09_vk2nig.png',
        description: '#C1CDF9',
         estilo:'"color:#C1CDF9"'
     },
@@ -126,7 +101,7 @@ export const productos =[
         name: 'Arc #10',
         price: 10,
         stock: 4,
-        img: i10,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/10_vchrcw.png',
        description: '#20331A',
         estilo:'"color:#20331A"'
     },
@@ -136,7 +111,7 @@ export const productos =[
         name: 'Arc #11',
         price: 10,
         stock: 4,
-        img: i11,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/11_u49w87.png',
        description: '#33512A',
         estilo:'"color:#33512A"'
     },
@@ -146,7 +121,7 @@ export const productos =[
         name: 'Arc #12',
         price: 10,
         stock: 4,
-        img: i12,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/12_yil611.png',
        description: '#446C37',
         estilo:'"color:#446C37"'
     },
@@ -156,7 +131,7 @@ export const productos =[
         name: 'Arc #13',
         price: 10,
         stock: 4,
-        img: i13,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/13_n8jhvk.png',
        description: '#558745',
         estilo:'"color:#558745"'
     },
@@ -166,7 +141,7 @@ export const productos =[
         name: 'Arc #14',
         price: 10,
         stock: 4,
-        img: i14,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/14_rdtade.png',
        description: '#66A253',
         estilo:'"color:#66A253"'
     },
@@ -176,7 +151,7 @@ export const productos =[
         name: 'Arc #15',
         price: 10,
         stock: 4,
-        img: i15,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855119/arc/15_o3ib2x.png',
        description: '#7CB36B',
         estilo:'"color:#7CB36B"'
     },
@@ -186,7 +161,7 @@ export const productos =[
         name: 'Arc #16',
         price: 10,
         stock: 4,
-        img: i16,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/16_bexcts.png',
        description: '#94C186',
         estilo:'"color:#94C186"'
     },
@@ -196,7 +171,7 @@ export const productos =[
         name: 'Arc #17',
         price: 10,
         stock: 4,
-        img: i17,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/17_bw2cmi.png',
        description: '#ABCEA1',
         estilo:'"color:#ABCEA1"'
     },
@@ -206,7 +181,7 @@ export const productos =[
         name: 'Arc #18',
         price: 10,
         stock: 4,
-        img: i18,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/18_tmke6m.png',
        description: '#C3DCBC',
         estilo:'"color:#C3DCBC"'
     },
@@ -216,7 +191,7 @@ export const productos =[
         name: 'Arc #19',
         price: 10,
         stock: 4,
-        img: i19,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/19_pqkrpy.png',
        description: '#8C2F39',
         estilo:'"color:#8C2F39"'
     },
@@ -226,7 +201,7 @@ export const productos =[
         name: 'Arc #20',
         price: 10,
         stock: 4,
-        img: i20,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/20_bdup5u.png',
        description: '#9F3541',
         estilo:'"color:#9F3541"'
     },
@@ -236,7 +211,7 @@ export const productos =[
         name: 'Arc #21',
         price: 10,
         stock: 4,
-        img: i21,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/21_iclbbi.png',
        description: '#B23A48',
         estilo:'"color:#B23A48"'
     },
@@ -246,7 +221,7 @@ export const productos =[
         name: 'Arc #22',
         price: 10,
         stock: 4,
-        img: i22,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/22_acspd9.png',
        description: '#BE4E59',
         estilo:'"color:#BE4E59"'
     },
@@ -256,7 +231,7 @@ export const productos =[
         name: 'Arc #23',
         price: 10,
         stock: 4,
-        img: i23,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/23_cmspr5.png',
        description: '#CA626A',
         estilo:'"color:#CA626A"'
     },
@@ -266,7 +241,7 @@ export const productos =[
         name: 'Arc #24',
         price: 10,
         stock: 4,
-        img: i24,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/24_xhvrg1.png',
        description: '#D6767B',
         estilo:'"color:#D6767B"'
     },
@@ -276,7 +251,7 @@ export const productos =[
         name: 'Arc #25',
         price: 10,
         stock: 4,
-        img: i25,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855120/arc/25_hjt7fr.png',
        description: '#E18A8B',
         estilo:'"color:#E18A8B"'
     },
@@ -286,7 +261,7 @@ export const productos =[
         name: 'Arc #26',
         price: 10,
         stock: 4,
-        img: i26,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855121/arc/26_bjkksn.png',
        description: '#EFA8A1',
         estilo:'"color:#EFA8A1"'
     },
@@ -296,7 +271,7 @@ export const productos =[
         name: 'Arc #27',
         price: 10,
         stock: 4,
-        img: i27,
+        img: 'https://res.cloudinary.com/dmipkkvkw/image/upload/v1663855121/arc/27_dkenso.png',
        description: '#F6B7AC',
         estilo:'"color:F6B7AC"'
     }

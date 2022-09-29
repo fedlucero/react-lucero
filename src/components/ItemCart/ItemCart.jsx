@@ -12,7 +12,7 @@ const ItemCart = ({item}) => {
     return (
         <div className="itemCartContainer">
             <div className="cartItem">
-                <div className="itemCartImg">
+                <div className="itemCartImg" key = {item.id}>
                     <img src={ item.img} alt={ item.name}  />
                 </div>
                 <div className="itemDesciption" style={{color: item.description}}>

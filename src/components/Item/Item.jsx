@@ -19,7 +19,7 @@ const Item = ({ item }) => {
                         <h2 style={{color: item.description}} className={`textColor-${item.id}`}>{item.name}</h2>
                         <h2 style={{color: item.description}} className={`textColor-${item.id}`}>$ {item.price}</h2>
                     </div>
-                     <div className={`btn btnDetalles color-${item.id}`} style={{'background-color': item.description}} >
+                     <div className={`btn btnDetalles color-${item.id}`} style={{backgroundColor: item.description}} >
                         Detalles
                     </div>
                     
