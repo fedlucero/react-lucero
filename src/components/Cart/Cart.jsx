@@ -41,7 +41,7 @@ const Cart = () => {
                              <Link style={{color:'white'}} to="/">Seguir comprando</Link>
                         </div>
                         <div className={`btn btnDetalles`}> 
-                            <Link style={{color:'white'}}  to="/Form">Realizar Compra</Link>
+                            <div style={{color:'white'}}  >Realizar Compra</div>
                         </div>
                                 
                         
