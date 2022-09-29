@@ -16,7 +16,10 @@ const CartProvider = ({ children }) => {
     }
   };
 
-
+  const itemQuantity = (item) => {
+    const auxItem = {...item,total: 0}
+    return auxItem;
+}
 
     const clearCart = () => setCart( [] );
     
@@ -31,6 +34,7 @@ const CartProvider = ({ children }) => {
     return (
         <CartContext.Provider value= { {
             clearCart,
+            itemQuantity,
             isInCart,
             removeItem,
             addItem,
