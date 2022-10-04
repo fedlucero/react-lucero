@@ -41,7 +41,7 @@ const ItemDetail = ({ item }) => {
              {   total === 0
                 ? <ItemCount inicial={0} stock={item.stock} seAgrego={Agregar}  style={{backgroundColor: item.description}}  styleText={{color: item.description}}/>
                 :
-                <Link to={`/cart`}><div className={`btn btnDetalles`} >Al carrito</div></Link>
+                <Link to={`/cart`}><div className={`btn `} style={{backgroundColor: item.description,}} >Al carrito</div></Link>
 
              } 
             

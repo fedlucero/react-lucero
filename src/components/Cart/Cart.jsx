@@ -83,11 +83,11 @@ const Cart = () => {
                         <p className="cartTotal">
                                 Total : $ {ctx.totalPrice()}
                         </p>
-                       <div className={`btn btnDetalles`} onClick={ ctx.clearCart  }>Vaciar carrito</div>
-                        <div className={`btn btnDetalles`}>
+                       <div className={`btn coloresFondo`} onClick={ ctx.clearCart  }>Vaciar carrito</div>
+                        <div className={`btn coloresFondo`}>
                              <Link style={{color:'white'}} to="/">Seguir comprando</Link>
                         </div>
-                        <div className={`btn btnDetalles`} onClick={createOrder}> 
+                        <div className={`btn coloresFondo`} onClick={createOrder}> 
                             <div style={{color:'white'}}  >Realizar Compra</div>
                         </div>
                                 

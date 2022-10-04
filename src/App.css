@@ -9,12 +9,145 @@ body{
 }
 
 @keyframes cambiarColor {   
-    0%   { background-color: #ffffef;}   
-    100% { background-color: #fff;}  
+    0% {color:#76A7F4;}
+    3.7% {color:#6B8CE6;}
+    7.4% {color:#6071D7;}
+    11.1% {color:#8671E1;}
+    14.8% {color:#AB71EB;}
+    18.5% {color:#B188EF;}
+    22.2% {color:#B69FF2;}
+    25.9% {color:#BCB6F6;}
+    29.6% {color:#C1CDF9;}
+    33.3% {color:#20331A;}
+    37% {color:#33512A;}
+    40.7% {color:#446C37;}
+    44.4% {color:#558745;}
+    48.1% {color:#66A253;}
+    51.8% {color:#7CB36B;}
+    55.5% {color:#94C186;}
+    59.2% {color:#ABCEA1;}
+    62.9% {color:#C3DCBC;}
+    66.6% {color:#8C2F39;}
+    70.3% {color:#9F3541;}
+    74% {color:#B23A48;}
+    77.7% {color:#BE4E59;}
+    81.4% {color:#CA626A;}
+    85.1% {color:#D6767B;}
+    88.8% {color:#E18A8B;}
+    92.5% {color:#EFA8A1;}
+    100% {color:#F6B7AC;}
+   
+    
  }
+
+ @keyframes cambiarColorFondo {   
+    0% {background-color:#76A7F4;}
+    3.7% {background-color:#6B8CE6;}
+    7.4% {background-color:#6071D7;}
+    11.1% {background-color:#8671E1;}
+    14.8% {background-color:#AB71EB;}
+    18.5% {background-color:#B188EF;}
+    22.2% {background-color:#B69FF2;}
+    25.9% {background-color:#BCB6F6;}
+    29.6% {background-color:#C1CDF9;}
+    33.3% {background-color:#20331A;}
+    37% {background-color:#33512A;}
+    40.7% {background-color:#446C37;}
+    44.4% {background-color:#558745;}
+    48.1% {background-color:#66A253;}
+    51.8% {background-color:#7CB36B;}
+    55.5% {background-color:#94C186;}
+    59.2% {background-color:#ABCEA1;}
+    62.9% {background-color:#C3DCBC;}
+    66.6% {background-color:#8C2F39;}
+    70.3% {background-color:#9F3541;}
+    74% {background-color:#B23A48;}
+    77.7% {background-color:#BE4E59;}
+    81.4% {background-color:#CA626A;}
+    85.1% {background-color:#D6767B;}
+    88.8% {background-color:#E18A8B;}
+    92.5% {background-color:#EFA8A1;}
+    100% {background-color:#F6B7AC;}
+   
+    
+ }
+
+
+ @keyframes cambiarAzules {   
+    0% {color:#76A7F4;}
+    12% {color:#6B8CE6;}
+    24% {color:#6071D7;}
+    36% {color:#8671E1;}
+    48% {color:#AB71EB;}
+    60% {color:#B188EF;}
+    72% {color:#B69FF2;}
+    84% {color:#BCB6F6;}
+    100% {color:#C1CDF9;}
+   
+    
+ }
+
+
+
+ @keyframes cambiarVerdes {   
+    
+    0% {color:#20331A;}
+    12% {color:#33512A;}
+    24% {color:#446C37;}
+    36% {color:#558745;}
+    48% {color:#66A253;}
+    60% {color:#7CB36B;}
+    72% {color:#94C186;}
+    84% {color:#ABCEA1;}
+    100% {color:#C3DCBC;}
+ }
+
+
+
+ @keyframes cambiarRojos {   
+
+    0% {color:#8C2F39;}
+    12% {color:#9F3541;}
+    24% {color:#B23A48;}
+    36% {color:#BE4E59;}
+    48% {color:#CA626A;}
+    60% {color:#D6767B;}
+    72% {color:#E18A8B;}
+    84% {color:#EFA8A1;}
+    100% {color:#F6B7AC;}
+   
+    
+ }
+
 
  .colores {
     animation-name: cambiarColor;
-    animation-duration: 5s;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  
+  }
+
+  .coloresFondo {
+    animation-name: cambiarColorFondo;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
   }
+
+
+  .azules {
+    animation-name: cambiarAzules;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
+  .verdes {
+    animation-name: cambiarVerdes;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+  .rojos {
+    animation-name: cambiarRojos;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
