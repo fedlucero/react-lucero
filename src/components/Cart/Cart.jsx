@@ -70,6 +70,7 @@ const Cart = () => {
                 <div className="cartVacio">
                         <p className="mensajeCarritoVacio">El carrito esta vacio</p>
                         <Link to={'/'}><div className={`btn volver coloresFondo`}>Volver a la tienda</div></Link>
+                        <div className='vacio'></div>
                 </div>
                 ) : (
                 <div className="cartConArc"> 
@@ -78,6 +79,8 @@ const Cart = () => {
                             ctx.cart.map(item => <ItemCart key={item.id} item={item} />)
                         }
                     </div>
+                    <div className='vacio'></div>
+
                     <div className='cartContext'>
                         
                         <p className="cartTotal">
@@ -88,11 +91,13 @@ const Cart = () => {
                              <Link style={{color:'white'}} to="/">Seguir comprando</Link>
                         </div>
                         <div className={`btn coloresFondo`} onClick={createOrder}> 
-                            <div style={{color:'white'}}  >Realizar Compra</div>
+                            <div style={{color:'white'}}  >Comprar</div>
                         </div>
                                 
                         
                     </div>
+                    
+
                 </div>    
                 )
                 }

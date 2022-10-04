@@ -97,9 +97,9 @@ body{
         align-items: center;
     }
     
-    .items L.lnk p{
+    .items .link p{
 
-        padding: 30px;
+        padding: 20px;
         color: var(--principal);
         font-family: 'Rubik Dirt', cursive;
     }}
@@ -113,6 +113,10 @@ body{
         border-radius: 50%;
         color: var(--principal);
         background-color: var(--fondo);
+    }
+    
+    .mensajeCarritoVacio{
+        font-size: 2rem;
     }
     
     
