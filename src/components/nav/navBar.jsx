@@ -16,7 +16,7 @@ function Navbar() {
         <Link className="link" to='/category/blue'><p className="azules">Blue</p></Link>
         <Link className="link" to='/category/green'><p className="verdes">Green</p></Link>
         <Link className="link" to='/category/red'><p className="rojos">Red</p></Link>
-        <CartWidgedt/>
+        <Link className="cartC" to={`/cart`}><CartWidgedt/></Link>
       </div>
     </nav>
   );

@@ -27,6 +27,11 @@ body{
     background-color:var(--gris);
 }
 
+.cartC{
+    display: flex;
+    align-items: center;
+}
+
 .cart{
     width:25px;
 }

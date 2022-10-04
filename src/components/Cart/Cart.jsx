@@ -69,7 +69,7 @@ const Cart = () => {
                 {ctx.cart.length === 0 ? (  
                 <div className="cartVacio">
                         <p className="mensajeCarritoVacio">El carrito esta vacio</p>
-                        <Link to={'/'}><div className={`btn volver btnDetalles`}>Volver a la tienda</div></Link>
+                        <Link to={'/'}><div className={`btn volver coloresFondo`}>Volver a la tienda</div></Link>
                 </div>
                 ) : (
                 <div className="cartConArc"> 
