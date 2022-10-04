@@ -7,3 +7,14 @@ body{
     width: 25px;
     height: 25px;
 }
+
+@keyframes cambiarColor {   
+    0%   { background-color: #ffffef;}   
+    100% { background-color: #fff;}  
+ }
+
+ .colores {
+    animation-name: cambiarColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }

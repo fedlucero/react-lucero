@@ -4,6 +4,7 @@ import './itemDetail.css'
 import{ Link } from 'react-router-dom'
 import { useState, useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
+import Swal from 'sweetalert2';
 
 
 const ItemDetail = ({ item }) => {
@@ -13,7 +14,10 @@ const ItemDetail = ({ item }) => {
 
     const Agregar = (total)=> {
         setTotal(total)
-        alert(`Se agregaron ${total} al carrito`)
+        // alert(`Se agregaron ${total} al carrito`)
+        Swal.fire(
+            `Se agregaron ${total} items al carrito`
+        )
         console.log(total);
         ctx.addItem(item,total)
     }
