@@ -30,6 +30,7 @@ const ItemDetail = ({ item }) => {
                     <h2 style={{color: item.description,}}>{item.name}</h2>
                     <h2 style={{color: item.description}}>$ {item.price}</h2>
                     <h2 style={{color: item.description}}> Cirulo de color {item.description}</h2>
+                    <h2 style={{color: item.description}}> Stock: {item.stock}</h2>
                 </div>
             {/* <ItemCount inicial={0} stock={item.stock}  seAgrego={Agregar} style={{backgroundColor: item.description}}  styleText={{color: item.description}}/> */}
             

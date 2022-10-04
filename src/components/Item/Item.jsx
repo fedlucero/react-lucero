@@ -18,6 +18,7 @@ const Item = ({ item }) => {
                     <div className='textArc'>
                         <h2 style={{color: item.description}} className={`textColor-${item.id}`}>{item.name}</h2>
                         <h2 style={{color: item.description}} className={`textColor-${item.id}`}>$ {item.price}</h2>
+                        <h2 style={{color: item.description}} className={`textColor-${item.id}`}>Stock:  {item.stock}</h2>
                     </div>
                      <div className={`btn btnDetalles color-${item.id}`} style={{backgroundColor: item.description}} >
                         Detalles

@@ -38,11 +38,24 @@ const Cart = () => {
         // console.log(order)
         const newOrderRef = doc( collection(db, "orders") )
         await setDoc( newOrderRef, order)
+
+
         Swal.fire(
             'Tu orden fue creada!',
             "Este es tu ID de orden: "+ newOrderRef.id
         )
+       
         ctx.clearCart()
+    
+        
+        itemsForDB.map(async (item) => {
+            const itemRef = doc(db, "products",item.id);
+            await updateDoc (itemRef,{
+                stock: increment(-parseInt(item.quantity))
+            })
+        })
+
+       
 
         
         
