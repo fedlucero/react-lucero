@@ -204,7 +204,7 @@
    }
   
    .cartContext{
-      width: 100vw;
+      max-width: 1200px;
       background-color: var(--gris2);
       position: fixed;
       bottom: 0;
