@@ -6,12 +6,14 @@ import Cart from "./components/Cart/Cart";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartProvider from "./components/Context/CartContext";
+import Canvas from "./components/Canvas/Canvas";
 
 function App() {
   return (
     <CartProvider>
     <BrowserRouter>
       <NavBar />
+      <Canvas/>
       <Routes>
         <Route path='/' element={<ItemListContainer/>}/>
         <Route path='/category/:idCategory' element={<ItemListContainer/>}/>
