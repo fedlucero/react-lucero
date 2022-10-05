@@ -9,10 +9,13 @@ const Canvas = props => {
     const ctx= canvas.getContext('2d')
     let value = 0
 const color = ['#76A7F4','#6B8CE6','#6071D7','#8671E1','#AB71EB','#B188EF','#B69FF2','#BCB6F6','#C1CDF9','#20331A','#33512A','#446C37','#558745','#66A253','#7CB36B','#94C186','#ABCEA1','#C3DCBC','#8C2F39','#9F3541','#B23A48','#BE4E59','#CA626A','#D6767B','#E18A8B','#EFA8A1','#F6B7AC']
+ctx.rect(0,0,1200,200)
+ctx.strokeStyle = '#575b5d'
+ctx.stroke() 
 
-ctx.font="30pt Rubik Dirt";
+ctx.font="20pt Rubik Dirt";
 ctx.fillStyle = color[value];
-ctx.fillText("Click para dibujar",400,100);     
+ctx.fillText("Click para dibujar",450,100);     
 
 let xActual = 0, yActual = 0;
 const obtenerXReal = (clientX) => clientX - canvas.getBoundingClientRect().left;
