@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {CartContext} from '../Context/CartContext'
-import { addDoc, collection, getFirestore, doc, updateDoc } from 'firebase/firestore';
+import { addDoc, collection, doc, updateDoc, increment } from 'firebase/firestore';
 import { useContext } from 'react';
 import './Form.css';
 import { db } from '../../utils/firebaseConfig';
@@ -34,14 +34,16 @@ function Form(){
         }))
     }
 
-    function updateStocks(cart) {
-        cart.forEach((cart) => {
-            const db = getFirestore();
-            const stockDoc = doc(db, 'data', cart.id);
-            updateDoc(stockDoc, { stock: cart.stock - cart.total });
-            
-        });
-    }
+  
+
+        function updateStocks(cart) {
+            ctx.cart.map(async (item) => {
+        const itemRef = doc(db, "products",item.id);
+        await updateDoc (itemRef,{
+            stock: increment(-parseInt(item.total))
+        })
+    })
+}
     
     const addOrder = () => {
 
@@ -54,7 +56,7 @@ function Form(){
                 id: product.id,
                 title: product.name,
                 price: product.price,
-                total: product.total,
+                quantity: product.total,
             })),
             date: Date(),
             total: ctx.totalPrice()
