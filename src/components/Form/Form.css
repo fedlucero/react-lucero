@@ -1,6 +1,207 @@
 
-@media only screen and (max-width: 500px) {}
- @media only screen and (min-width:501px) {}
+@media only screen and (max-width: 500px) {
+  
+  .contenedorFin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    
+}
+.contenedorFin h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+}
+.finalizandoCompra{
+    text-align: center;
+}
+.contenedorPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formContenedor{
+    width:90vw;
+    background-color: var(--gris);
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 50px;
+    padding-top: 10px;
+
+}
+.form h2{
+    padding: 20px;
+    padding-top: 0;
+}
+
+.form input{
+    width:90%;
+    background-color: var(--gris2);
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    padding:5px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+  }
+  .ticketContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+  }
+  .ticket{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gris);
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+  }
+
+  .ticketTitulo{
+    font-size: 1.2rem;
+    font-family: 'Rubik Dirt', cursive
+
+
+  }
+  .ticketCliente{
+
+        font-size: 1.2rem;
+        font-family: 'Rubik Dirt', cursive
+
+
+      
+  }
+  .ticket p{
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    padding: 5px;
+
+  }
+  .ticket h2{
+    padding: 10px;
+
+  }
+
+}
+ @media only screen and (min-width:501px) {
+  
+  .contenedorFin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.contenedorFin h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+}
+.finalizandoCompra{
+    text-align: center;
+}
+.contenedorPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formContenedor{
+    width:80vw;
+    background-color: var(--gris);
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 50px;
+    padding-top: 10px;
+
+}
+.form h2{
+    padding: 20px;
+    padding-top: 0;
+}
+
+.form input{
+    width:90%;
+    background-color: var(--gris2);
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    padding:5px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+  }
+  .ticketContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+  }
+  .ticket{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gris);
+    box-shadow: 0px 16px 15px -6px rgba(0,0,0,0.41);
+  }
+
+  .ticketTitulo{
+    font-size: 1.2rem;
+    font-family: 'Rubik Dirt', cursive
+
+
+  }
+  .ticketCliente{
+
+        font-size: 1.2rem;
+        font-family: 'Rubik Dirt', cursive
+
+
+      
+  }
+  .ticket p{
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    padding: 5px;
+
+  }
+  .ticket h2{
+    padding: 10px;
+
+  }
+
+ }
  
  
  
@@ -94,6 +295,11 @@
       .ticket p{
         font-size: 1rem;
         font-family: 'Rubik', sans-serif;
+        padding: 5px;
+
+      }
+      .ticket h2{
+        padding: 10px;
 
       }
 

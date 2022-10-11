@@ -84,12 +84,12 @@ function Form(){
             <div className="ticketContainer">
                 <div className="ticket">
                     <h2 className="ticketTitulo colores">¡Muchas gracias por tu compra!</h2>
-                    <h3 className="ticketCliente colores">{(buyer.Nombre).toUpperCase()}</h3>
+                    <h3 className="ticketCliente">{(buyer.Nombre).toUpperCase()}</h3>
                     <p className="compra">La compra se ha realizado exitosamente</p>
                     <p className="compra">Te enviamos un mail a <span className="mail">{(buyer.Email)}</span></p>
                     <p className="compra">Tu nro. de orden es:</p>
                     <p className="TicketId">{orderId}</p>
-                    <h2 className="ticketTienda colores">COMTIENDA</h2>
+                    <h2 className="ticketTienda">COMTIENDA</h2>
                     <Link to={'/'}><p className="btn coloresFondo">Realizar otra compra</p></Link>
                 </div>
             </div>                        
@@ -99,7 +99,7 @@ function Form(){
     return (
     <>
         <div className='contenedorFin'>
-        <h1 className="FinalizandoCompra colores">Finalizando Compra</h1>
+        <h1 className="FinalizandoCompra colores">Completa tus datos</h1>
         </div>
         {
         loading ? 
@@ -108,7 +108,6 @@ function Form(){
         <div className="contenedorPrincipal">
         <div className="formContenedor">
                 <form  onSubmit={ handleSubmit }  className="form">
-                    <h2 className='formText'>Completar Datos:</h2>
                     <input 
                         type="text"
                         name="Nombre"
