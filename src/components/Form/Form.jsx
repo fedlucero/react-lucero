@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Spinner from '../Spinner/Spinner'
-import './Form.css';
-import {useCartContext} from '../Context/CartContext'
+import {CartContext} from '../Context/CartContext'
 import { addDoc, collection, getFirestore, doc, updateDoc } from 'firebase/firestore';
+import { useContext } from 'react';
+import './Form.css';
+import { db } from '../../utils/firebaseConfig';
+
 
 function Form(){
-    const {cart, totalPrice, clearCart } = useCartContext();
+    const ctx = useContext(CartContext);
     const [orderId, setOrderId] = useState(false);
     const [loading, setLoading] = useState(false)
     const [buyer, setBuyer] = useState({
@@ -36,7 +38,7 @@ function Form(){
         cart.forEach((cart) => {
             const db = getFirestore();
             const stockDoc = doc(db, 'data', cart.id);
-            updateDoc(stockDoc, { stock: cart.stock - cart.quantity });
+            updateDoc(stockDoc, { stock: cart.stock - cart.total });
             
         });
     }
@@ -48,21 +50,21 @@ function Form(){
         const order = {
             
             buyer,
-            items: cart.map((product) => ({
+            items: ctx.cart.map((product) => ({
                 id: product.id,
-                title: product.nombre,
-                price: product.precio,
-                quantity: product.quantity,
+                title: product.name,
+                price: product.price,
+                total: product.total,
             })),
             date: Date(),
-            total: totalPrice()
+            total: ctx.totalPrice()
         }
 
-        const db = getFirestore();
+        // const db = getFirestore();
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then(({ id }) => {
             setOrderId(id)
-            updateStocks(cart)
+            updateStocks(ctx.cart)
             setLoading(false)
         });
         
@@ -71,22 +73,22 @@ function Form(){
     const handleSubmit  = (e) => {
         e.preventDefault()
         addOrder();
-        clearCart();
+        ctx.clearCart();
     }
     
     
     if( orderId != "" ) {
         return (
-            <div className="tiketContenedor">
-                <div className="tiket">
-                    <h2 className="tiketTitulo">¡Muchas gracias por tu compra!</h2>
-                    <h3 className="tiketCliente">**{(buyer.Nombre).toUpperCase()}**</h3>
+            <div className="ticketContainer">
+                <div className="ticket">
+                    <h2 className="ticketTitulo colores">¡Muchas gracias por tu compra!</h2>
+                    <h3 className="ticketCliente colores">{(buyer.Nombre).toUpperCase()}</h3>
                     <p className="compra">La compra se ha realizado exitosamente</p>
                     <p className="compra">Te enviamos un mail a <span className="mail">{(buyer.Email)}</span></p>
                     <p className="compra">Tu nro. de orden es:</p>
-                    <p className="TiketId">{orderId}</p>
-                    <h2 className="tiketTituloBar">Rodolfo's Beer&Burger</h2>
-                    <Link to={'/'}><p className="carta">Realizar otra compra</p></Link>
+                    <p className="TicketId">{orderId}</p>
+                    <h2 className="ticketTienda colores">COMTIENDA</h2>
+                    <Link to={'/'}><p className="btn coloresFondo">Realizar otra compra</p></Link>
                 </div>
             </div>                        
         )
@@ -94,19 +96,21 @@ function Form(){
 
     return (
     <>
-        <h1 className="FinalizandoCompra">Finalizando Compra</h1>
+        <div className='contenedorFin'>
+        <h1 className="FinalizandoCompra colores">Finalizando Compra</h1>
+        </div>
         {
         loading ? 
-        <Spinner /> : ( 
+        <div>cargando..</div> : ( 
         !orderId&&
-        <div className="formContenedorPrincipal">
-            <div className="formContenedor">
+        <div className="contenedorPrincipal">
+        <div className="formContenedor">
                 <form  onSubmit={ handleSubmit }  className="form">
                     <h2 className='formText'>Completar Datos:</h2>
                     <input 
                         type="text"
                         name="Nombre"
-                        placeholder=' Nombre Completo'
+                        placeholder='Nombre Completo'
                         value={Nombre}
                         required
                         onChange={handleInputChange} 
@@ -160,7 +164,7 @@ function Form(){
                     ? (
                         // Botón habilitado
                         <input 
-                            className="finalizarCompraActive"
+                            className="btn coloresFondo"
                             type="submit"
                             value="Finalizar Compra"
                         />
@@ -175,7 +179,7 @@ function Form(){
                     )
                     }
                 </form>
-           </div>
+        </div>
         </div>
         )}
     </>    
