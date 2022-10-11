@@ -5,6 +5,7 @@ import { addDoc, collection, doc, updateDoc, increment } from 'firebase/firestor
 import { useContext } from 'react';
 import './Form.css';
 import { db } from '../../utils/firebaseConfig';
+import MyLoader from '../Loader/Loader';
 
 
 function Form(){
@@ -103,7 +104,7 @@ function Form(){
         </div>
         {
         loading ? 
-        <div>cargando..</div> : ( 
+        <MyLoader/> : ( 
         !orderId&&
         <div className="contenedorPrincipal">
         <div className="formContenedor">
