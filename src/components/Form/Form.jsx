@@ -100,7 +100,7 @@ function Form(){
     return (
     <>
         <div className='contenedorFin'>
-        <h1 className="FinalizandoCompra colores">Completa tus datos</h1>
+        <h1 className="FinalizandoCompra colores">Finalizando Compra</h1>
         </div>
         {
         loading ? 

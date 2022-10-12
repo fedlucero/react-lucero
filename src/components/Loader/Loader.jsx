@@ -1,11 +1,11 @@
 import React from "react"
-import ContentLoader from "react-content-loader"
+
 import "./loader.css"
 
-const MyLoader = (props) => (
-  <ContentLoader>
-  <span className="loader"></span>
-  </ContentLoader>
-)
-
+function MyLoader (){
+  return(
+  <div className="loader"><p>Loading</p></div>
+  )
+}
+ 
 export default MyLoader
