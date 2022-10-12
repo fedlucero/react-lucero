@@ -52,4 +52,4 @@ Se puede clonar el repositorio, ingresando a una terminal y ejecutando:
 
 git clone https://github.com/fedlucero/react-lucero.git
 
-Luego continuar con el paso 3 de la otra forma
+Luego continuar con el paso 3
