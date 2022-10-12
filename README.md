@@ -20,8 +20,11 @@ Tambien se le agrego al sitio un hero interactivo, donde el usuario puede dibuja
 Proba el hero <a href="https://fedlucero.github.io/ComtiendaPlayground/" target="_blank">.COMTIENDA PLAYGROUND</a>
 
 
-## VIDEO
-Hacé click [ACA](https://youtu.be/aNKwE0Dve3U) para ver un video de demostración del proceso de compra de la Comtienda.
+
+<h3 align="center">Video de navegación en la aplicación (click para ver)</h3>
+  <a href="https://youtu.be/aNKwE0Dve3U">
+    <img src="https://img.youtube.com/vi/aNKwE0Dve3U/0.jpg" alt="habemuspapayoutube" >
+  </a>
 
 
 ## Descargar y correr el proyecto
